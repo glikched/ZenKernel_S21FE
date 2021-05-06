@@ -410,12 +410,27 @@
 		size = <0 0x800000>;
 	};
 
+<<<<<<< HEAD
 	user_contig_mem: user_contig_region {
 		compatible = "shared-dma-pool";
 		alloc-ranges = <0x0 0x00000000 0x0 0xffffffff>;
 		reusable;
 		alignment = <0x0 0x400000>;
 		size = <0x0 0x1000000>;
+=======
+			fstab {
+				compatible = "android,fstab";
+				vendor {
+					compatible = "android,vendor";
+					dev = "/dev/block/platform/soc/4744000.sdhci/by-name/vendor";
+					type = "ext4";
+					mnt_flags = "ro,barrier=1,discard";
+					fsmgr_flags = "wait,slotselect";
+					status = "ok";
+				};
+			};
+		};
+>>>>>>> b89f3aac51 (disable avb)
 	};
 
 	qseecom_mem: qseecom_region {
