@@ -1,0 +1,10 @@
+# Python cache
+scripts/crypto/__pycache__
+
+# OUTPUT Directory
+out
+
+# GitHub Dependecies
+aarch64-linux-android-4.9
+AnyKernel3
+clang-r383902
